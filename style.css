@@ -1,0 +1,115 @@
+body {
+    background: url(./assets/images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    background-size: 100% 100%;
+    font-family: 'Poppins';
+    }
+
+    #container {
+        width: 100%;
+        display: flex;
+        gap: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 125px;
+    }
+    .info {
+        display: flex;
+        flex-flow: column;
+        text-align: left;
+        width: fit-content;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .info h1{ font-size: 45px; color: white; margin-bottom: -2px; }
+    .info p{ font-size: 15px; }
+
+    .trial {
+        color: white;
+        background-color: hsl(248, 32%, 49%);
+        height: 50px;
+        width: 470px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .trial span {
+        color: lightgrey;
+    }
+
+    form {
+        display: grid;
+        align-content: space-around;
+        justify-items: right;
+        height: 300px;
+        width: fit-content;
+        padding: 60px 30px 60px 30px;
+        background-color: white;
+    }
+
+    #input {
+        position: relative;
+    }
+
+    #input img { position: absolute; right: 20px; top: 10px; visibility: hidden;}
+
+    input {
+        width: 400px;
+        height: 42px;
+        border-radius: 5px;
+        border: 1px solid lightgrey;
+    }
+
+    input:hover {
+        border: 1px solid black;
+    }
+
+    input:hover #wrong, #cannot, #no, #failed  {
+            display: none;
+        }
+    #wrong, #cannot, #no, #failed { color: red; font-size: 12px; margin-bottom: 20px; display: none;}
+
+    button {
+        width: 405px;
+        height: 45px;
+        border: none;
+        margin: auto;
+        color: white;
+        background-color: hsl(154, 59%, 51%);
+        text-transform: upperCase;
+    }
+
+    button:hover {
+        opacity: .5;
+        cursor: pointer;
+    }
+    
+
+    p {
+        margin: auto;
+        color: lightgray;
+        font-size: 12px;
+    }
+
+    span {
+        color: red;
+    }
+
+    @media screen and (max-width: 400px) {
+        input, button, form { width: 250px}
+        .trial { width: 300px;}
+        form { height: 400px;}
+        form {
+            padding-top: 20px;
+            padding-bottom: 20px; 
+        }
+        br{ display: none;}
+        .underButton { font-size: 10px;}
+    }
+

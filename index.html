@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.google.com/specimen/Poppins">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+
+  <div id="container" role="main">
+    <div class="info">
+        <h1>Learn to code by<br> watching others</h1>
+        <p>See how experienced developers solve problems in real-time.<br>Watching scripted tutorials is great, but understanding how<br>developers think is invaluable.</p>
+    </div>
+
+    <div id="form">
+        <div class="trial"><div>Try it free 7 days</div><span>then $20/mo. thereafter</span></div>
+    <form >
+        <div id="input"><input type="text" id="name" name="fName"><img id="image" src="../assets/images/icon-error.svg"></div>
+            <div id="wrong">first name cannot be empty</div>
+        <div id="input"><input type="text" id="name" name="lName"><img id="img" src="../assets/images/icon-error.svg"></div>
+            <div id="failed">last name cannot be empty</div>
+        <div id="input"><input type="text" id="name" name="eMail"><img id="immg" src="../assets/images/icon-error.svg"></div>
+            <div id="cannot">email cannot be empty</div>
+        <div id="input"><input type="text" id="name" name="pwd"><img id="immgg" src="../assets/images/icon-error.svg"></div>
+            <div id="no">password cannot be empty</div>
+        <button onclick="submitted();">Claim your free trial</button>
+        <p class="underButton">By clicking the button, you are agreeing to our  <span>Terms and Services</span></p>
+    </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
